@@ -20,6 +20,7 @@ int	main(int argc, char *argv[])
 		idx++;
 	}
 	printf("Original number list\n");
+	printf("num list count = %d\n", len);
 	printf(">>>>>>>>>>>>>>>>>>>\n");
 	while (argc < idx)
 	{

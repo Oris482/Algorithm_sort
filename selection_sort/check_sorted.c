@@ -6,7 +6,7 @@
 /*   By: jaesjeon <jaesjeon@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 18:09:24 by jaesjeon          #+#    #+#             */
-/*   Updated: 2022/02/09 18:14:58 by jaesjeon         ###   ########.fr       */
+/*   Updated: 2022/02/09 18:52:27 by jaesjeon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	check_sorted(int *num_list, int len)
 	int	idx;
 
 	idx = 0;
-	while (idx < len)
+	while (idx < len - 1)
 	{
 		if (num_list[idx] > num_list[idx + 1])
 			return (0);
