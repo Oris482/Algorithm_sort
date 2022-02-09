@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int	ft_atoi(const char *str);
+int		ft_atoi(const char *str);
 void	selection_sort(int *num_list, int len);
+int		check_sorted(int *num_list, int len);
 
 int	main(int argc, char *argv[])
 {
@@ -36,5 +37,11 @@ int	main(int argc, char *argv[])
 	}
 	printf("\n");
 	printf("<<<<<<<<<<<<<<<<<<<\n");
+	printf("*******************\n");
+	printf("is sorted? = ");
+	if (check_sorted(num_list, len))
+		printf("YES!!\n");
+	else
+		printf("NO...\n");
 	return (0);
 }

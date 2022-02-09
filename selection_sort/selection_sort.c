@@ -6,7 +6,7 @@
 /*   By: jaesjeon <jaesjeon@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/08 20:49:23 by jaesjeon          #+#    #+#             */
-/*   Updated: 2022/02/08 21:57:36 by jaesjeon         ###   ########.fr       */
+/*   Updated: 2022/02/09 18:09:03 by jaesjeon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	selection_sort(int *num_list, int len)
 	{
 		min = 2147483647;
 		sub_i = primary_i;
-		while (sub_i < len - primary_i)
+		while (sub_i < len)
 		{
 			if (num_list[sub_i] < min)
 			{
@@ -39,7 +39,7 @@ void	selection_sort(int *num_list, int len)
 			compare_count++;
 			sub_i++;
 		}
-		if (num_list[primary_i] != num_list[min_idx])
+		if (primary_i != min_idx)
 		{
 			tmp = num_list[primary_i];
 			num_list[primary_i] = num_list[min_idx];
