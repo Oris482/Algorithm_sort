@@ -6,7 +6,7 @@
 /*   By: jaesjeon <jaesjeon@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 19:40:44 by jaesjeon          #+#    #+#             */
-/*   Updated: 2022/02/15 21:52:58 by jaesjeon         ###   ########.fr       */
+/*   Updated: 2022/02/15 21:56:06 by jaesjeon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,6 @@ void	quick_sort(int *num_list, int start, int end)
 		tmp = num_list[primary_idx];
 		num_list[primary_idx] = num_list[sub_idx];
 		num_list[sub_idx] = tmp;
-		quick_sort(num_list, sub_idx + 1, end);
+		quick_sort(num_list, start, end);
 	}
-	return ;
 }

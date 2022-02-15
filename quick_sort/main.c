@@ -6,7 +6,7 @@
 /*   By: jaesjeon <jaesjeon@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 19:00:34 by jaesjeon          #+#    #+#             */
-/*   Updated: 2022/02/09 20:37:38 by jaesjeon         ###   ########.fr       */
+/*   Updated: 2022/02/15 21:57:23 by jaesjeon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 
 int		ft_atoi(const char *str);
-void	quick_sort(int *num_list, int len);
+void	quick_sort(int *num_list, int start, int end);
 int		check_sorted(int *num_list, int len);
 
 int	main(int argc, char *argv[])
@@ -40,7 +40,7 @@ int	main(int argc, char *argv[])
 	}
 	printf("\n");
 	printf("<<<<<<<<<<<<<<<<<<<\n");
-	quick_sort(num_list, len);
+	quick_sort(num_list, 0, len - 1);
 	printf("sorted number list\n");
 	printf(">>>>>>>>>>>>>>>>>>>\n");
 	argc = 0;
